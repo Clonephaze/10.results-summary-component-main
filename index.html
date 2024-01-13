@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="preload" href="assets/fonts/HankenGrotesk-VariableFont_wght.ttf" as="font" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Results summary component</title>
+    <meta name="og:image" content="https://raw.githubusercontent.com/Clonephaze/10.results-summary-component-main/main/ChallengeComplete.png" />
+    <meta name="og:description" content="Results summary component, a challenge from Frontend Mentor. Coded by Jack- @Clonephaze." />
+    <meta name="og:title" content="Frontend Mentor | Results summary component" />
 </head>
 <body>
+    <main>
+        <div class="result-card">
+            <h1>Your Result</h1>
+            <div class="circle">
+                <div class="counter" id="result-number">76</div>
+                <span>of 100</span>
+            </div>
+            <h2>Great</h2>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <div class="summary-card">
+            <h2>Summary</h2>
+            <div class="summary-list">
+                <div class="summary-item ">
+                    <div class="title"><img src="assets/images/icon-reaction.svg" alt="lightning bolt icon"><span>Reaction</span></div>
+                    <div class="small-result-numbers"><span class="counter">80</span> / 100</div>
+                </div>
+                <div class="summary-item">
+                    <div class="title"><img src="assets/images/icon-memory.svg" alt="brain icon"><span>Memory</span></div>
+                    <div class="small-result-numbers"><span class="counter">92</span> / 100</div>
+                </div>
+                <div class="summary-item">
+                    <div class="title"><img src="assets/images/icon-verbal.svg" alt="speech bubble icon"><span>Verbal</span></div>
+                    <div class="small-result-numbers"><span class="counter">61</span> / 100</div>
+                </div>
+                <div class="summary-item">
+                    <div class="title"><img src="assets/images/icon-visual.svg" alt="eye icon"><span>Visual</span></div>
+                    <div class="small-result-numbers"><span class="counter">72</span> / 100</div>
+                </div>
+            </div>
+            <button type="button" class="btn-continue" id="btn-continue">Continue</button>
+        
+        </div>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </main>
+    <footer data-hidden="true">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/Clonephaze">Clonephaze</a>.
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
